@@ -18,6 +18,9 @@ canvas { pointer-events:none; z-index:-1; position:fixed; top: 0; left: 0; width
 <script type="text/javascript" src="https://s3-us-west-1.amazonaws.com/svi-web-assets/lib/bridgeFigure.js"></script>
 <script type="text/javascript" src="https://s3-us-west-1.amazonaws.com/svi-web-assets/lib/tween.js"></script>
 <script type="text/javascript" src="https://s3-us-west-1.amazonaws.com/svi-web-assets/lib/requestAnimationFrame.js"></script>
+<script type="text/javascript" src="https://s3-us-west-1.amazonaws.com/svi-web-assets/lib/underscore.js"></script>
+<script type="text/javascript" src="https://s3-us-west-1.amazonaws.com/svi-web-assets/lib/sceneAndCamera.js"></script>
+<script type="text/javascript" src="https://s3-us-west-1.amazonaws.com/svi-web-assets/lib/renderer.js"></script>
 <script type="text/javascript" src="https://s3-us-west-1.amazonaws.com/svi-web-assets/lib/utils.js"></script>
 <script type="x-shader/x-vertex" id="vertexshader">
     uniform float amplitude;
@@ -71,10 +74,6 @@ the snippet for the BODY is:
     map = THREE.ImageUtils.loadTexture("https://s3-us-west-1.amazonaws.com/svi-web-assets/lib/p_trans6.png");
     document.addEventListener('mousemove', onDocumentMouseMove, false);
     window.addEventListener('deviceorientation', handleOrientation);
-    $(document).ready(function(){
-      heightOnLoad = window.innerHeight;
-      widthOnLoad = window.innerWidth;
-    })
   init();
   animate();
 </script>
